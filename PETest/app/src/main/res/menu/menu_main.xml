@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.xHadesvn.pe.MainActivity">
+    <group android:id="@+id/group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/rd_en_en"
+            android:title="@string/rd_action_en_en"
+            android:checked="true"
+            />
+        <item android:id="@+id/rd_en_vn"
+            android:title="@string/rd_action_en_vn"/>
+    </group>
+    <AutoCompleteTextView
+        android:id="@+id/autocompleteView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search dogs..."/>
+    <item
+
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search"/>
+</menu>
